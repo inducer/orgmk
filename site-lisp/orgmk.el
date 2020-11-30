@@ -207,7 +207,12 @@
   (defun org-latex-export-body-only-to-latex ()
     "Export only code between \"\begin{document}\" and \"\end{document}\" to a LaTeX file."
     (interactive)
-    (org-latex-export-to-latex nil nil nil t)))
+    (org-latex-export-to-latex nil nil nil t))
+
+  (defun org-beamer-export-body-only-to-latex ()
+    "Export only code between \"\begin{document}\" and \"\end{document}\" to a LaTeX file."
+    (interactive)
+    (org-beamer-export-to-latex nil nil nil t)))
 
 ;; require all files from `lisp' directory
 (dolist (file (directory-files
